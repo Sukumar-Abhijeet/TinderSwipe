@@ -15,7 +15,7 @@ const SwipeCard = ({...props} : CardProps) => {
     const {account:{imageUrl}} = props;
     return (
         <View style={[styles.container,{backgroundColor:colors.surfaces.lightGrey}]}>
-            <Image source={{uri:imageUrl}} style={styles.imageStyles} />
+            <Image source={imageUrl} style={styles.imageStyles} />
         </View>
     )
 };
