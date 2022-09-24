@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
         alignSelf: 'center',
     },
     wrapper: {
-        marginTop: 430
+        marginTop: 580
     },
     adImage: {
         height: 52,

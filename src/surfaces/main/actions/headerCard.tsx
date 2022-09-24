@@ -1,11 +1,16 @@
 import React from 'react';
 import { View, StyleSheet, Text } from 'react-native';
 import Avatar from '../../../components/avatar/index';
-const HeaderCard = () => {
+
+type HeaderProps = {
+    zIndex: number
+}
+
+const HeaderCard = ({ zIndex }: HeaderProps) => {
 
     const AVATARS = [1, 2, 3];
     return (
-        <View style={styles.wrapper}>
+        <View style={[styles.wrapper, { zIndex }]}>
             <View style={styles.textWrapper}>
                 <Text style={styles.headText}>고정모임</Text>
                 <Text style={styles.subText}>일정 제한 없이</Text>
